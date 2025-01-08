@@ -14,7 +14,7 @@ return {
 
         vim.keymap.set("n", "<A-!>", function() mark.set_current_at(1) end)
         vim.keymap.set("n", "<A-\">", function() mark.set_current_at(2) end)
-        vim.keymap.set("n", "<M-S-3>", function() mark.set_current_at(3) end)
+        vim.keymap.set("n", "<A-§>", function() mark.set_current_at(3) end)
         vim.keymap.set("n", "<A-$>", function() mark.set_current_at(4) end)
     end
 }

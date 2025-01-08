@@ -6,7 +6,6 @@ return {
             layout_config = {
                 width = 0.99,  -- Adjust the width
                 height = 0.99, -- Adjust the height
-                -- preview_cutoff = 120,
             },
         },
     },
@@ -40,20 +39,4 @@ return {
         },
         { '<leader>fc', require 'telescope.builtin'.git_status, desc = '[F]ind [C]hanged (git_status)' }
     },
-    -- config = function()
-    --     -- Enable telescope extensions, if they are installed
-    --     pcall(require('telescope').load_extension, 'fzf')
-    --     pcall(require('telescope').load_extension, 'ui-select')
-
-    --     require('telescope').setup {
-    --         defaults = {
-    --             layout_config = {
-    --                 width = 0.98,  -- Adjust the width
-    --                 height = 0.98, -- Adjust the height
-    --                 -- preview_cutoff = 120,
-    --             },
-    --             -- Additional default settings can go here
-    --         },
-    --     }
-    -- end
 }
