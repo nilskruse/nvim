@@ -1,7 +1,8 @@
 return {
-    'lewis6991/gitsigns.nvim',
-    event = 'VimEnter',
-    opts = {
-        current_line_blame = true,
-    }
+	"lewis6991/gitsigns.nvim",
+	-- event = "VimEnter",
+	opts = {
+		current_line_blame = true,
+		auto_attach = true,
+	},
 }

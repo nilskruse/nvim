@@ -1,2 +1,2 @@
 -- init.lua
-require('nilskruse')
+require("nilskruse")
