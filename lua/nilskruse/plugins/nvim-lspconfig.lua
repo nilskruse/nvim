@@ -109,7 +109,7 @@ return {
 				map("<leader>loc", require("telescope.builtin").lsp_outgoing_calls, "[L]ist [O]utgoing [C]alls")
 				map("<leader>ld", require("telescope.builtin").diagnostics, "[L]ist [D]iagnostics")
 
-				map("<F4>", ":ClangdSwitchSourceHeader<cr>", "Switch to header")
+				map("<F4>", ":LspClangdSwitchSourceHeader<cr>", "Switch to header")
 
 				-- This function resolves a difference between neovim nightly (version 0.11) and stable (version 0.10)
 				---@param client vim.lsp.Client
