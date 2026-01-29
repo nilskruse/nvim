@@ -24,6 +24,8 @@ return { -- Autoformat
 			-- lua = { lsp_format = "fallback" },
 			-- rust = { lsp_format = "fallback", stop_after_first = false },
 			sql = { "sql_formatter" },
+			sh = { "shfmt" },
+			bash = { "shfmt" }, -- optional, some setups use this filetype
 			-- xml = { "xmllint" },
 			-- yaml = { "yamlfix" },
 			-- ["*"] = { "injected" },
