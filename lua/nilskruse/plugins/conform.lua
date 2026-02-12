@@ -1,4 +1,4 @@
-return { -- Autoformat
+return {
 	"stevearc/conform.nvim",
 	event = { "BufWritePre" },
 	cmd = { "ConformInfo" },
@@ -14,21 +14,24 @@ return { -- Autoformat
 	},
 	opts = {
 		notify_on_error = true,
-		formatters_by_ft = {
-			-- Conform can also run multiple formatters sequentially
-			-- python = { "isort", "black" },
-			--
-			-- You can use 'stop_after_first' to run the first available formatter from the list
-			-- javascript = { "prettierd", "prettier", stop_after_first = true },
 
-			-- lua = { lsp_format = "fallback" },
-			-- rust = { lsp_format = "fallback", stop_after_first = false },
+		formatters_by_ft = {
 			sql = { "sql_formatter" },
 			sh = { "shfmt" },
-			bash = { "shfmt" }, -- optional, some setups use this filetype
-			-- xml = { "xmllint" },
-			-- yaml = { "yamlfix" },
-			-- ["*"] = { "injected" },
+			bash = { "shfmt" },
+			-- xml = { "xmlformatter" },
 		},
-	}
+		-- formatters = {
+		-- 	xmlformatter = {
+		-- 		-- ✅ Mason stellt das Binary bereit
+		-- 		args = {
+		-- 			"--indent",
+		-- 			"4",
+		-- 			"--preserve-attributes",
+		-- 			"--selfclose",
+		-- 			"-",
+		-- 		},
+		-- 	},
+		-- },
+	},
 }
